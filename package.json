@@ -1,26 +1,22 @@
 {
-  "name": "hex-colorizer",
-  "displayName": "hex-colorizer",
+  "name": "number-color-picker",
+  "displayName": "number-color-picker",
   "description": "",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "*"
-  ],
+  "categories": ["Other"],
+  "activationEvents": ["*"],
   "main": "./dist/extension.js",
   "contributes": {
     "configuration": {
-      "title": "vscode-color-picker",
+      "title": "number-color-picker",
       "properties": {
-        "vscode-color-picker.languages": {
+        "number-color-picker.languages": {
           "type": "array",
           "default": [
-            "python",
+            "html",
             "javascript",
             "typescript"
           ],
