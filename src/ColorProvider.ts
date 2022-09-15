@@ -10,7 +10,7 @@ export default class ColorProvider implements DocumentColorProvider {
         const line = nMatches.length;
         let characterIndex: number;
         if (line === 0) { characterIndex = index; }
-        else { characterIndex = index - nMatches[line - 1].index - 1; }
+        else { characterIndex = index - nMatches[line - 1].index! - 1; }
         return new Position(line, characterIndex);
     }
     

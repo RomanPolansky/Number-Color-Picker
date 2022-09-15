@@ -16,7 +16,7 @@ const colorComponentToHex = (colorCompoment: number) => {
  * VsCodeColorConverter.hexToVsCodeColor('0xff0000')
  */
 export const hexToVsCodeColor = (hexColor: string) => {
-    const result = /^0x?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexColor);
+    const result = /^0x?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexColor)!;
     const r = parseInt(result[1], 16) / 255;
     const g = parseInt(result[2], 16) / 255;
     const b = parseInt(result[3], 16) / 255;
