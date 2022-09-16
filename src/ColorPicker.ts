@@ -1,7 +1,8 @@
 import { languages, workspace, TextDocumentChangeEvent, Disposable } from 'vscode';
 import ColorProvider from './ColorProvider';
 
-export default class ColorPicker {
+interface IExtensionContextSubscriptions { dispose(): any }
+export default class ColorPicker implements IExtensionContextSubscriptions {
 	constructor() {
 		const subscriptions: Disposable[] = [];
         workspace.onDidChangeTextDocument(this._onDidChangeTextDocument, this, subscriptions);
