@@ -3,10 +3,10 @@
   "displayName": "number-color-picker",
   "publisher": "roman-polansky",
   "description": "",
-  "icon": "logo.jpg",
-  "version": "0.0.2",
+  "icon": "logo.png",
+  "version": "0.0.3",
   "engines": {
-    "vscode": "^1.71.0"
+    "vscode": "^1.62.0"
   },
   "categories": ["Other"],
   "repository": {
